@@ -1,36 +1,81 @@
 <html>
+    <style>
+     body {
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+#tNl {
+    top: 0;
+    left: 0;
+}
+#tNr {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#centerPart {
+    text-align: center;
+    margin-top: 15%;
+    padding-bottom: 15%;
+}
+#centerPart img {
+    margin-bottom: 25px;
+}
+#query {
+    height: 30px;
+    width: 40%;
+    margin-bottom: 25px;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 3px 2px #e2e2e2;
+}
+.button {
+    color: #757575;
+    background: #f2f2f2;
+    font-size: 13px;
+    font-weight: bold;
+    margin: auto 5px;
+    border: 0;
+    padding: 10px 15px;
+}
+    </style>
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" type="text/css" href="google.css"> 
+    </head>
     <body>
-        <div id="topMenu">
-            <div id="leftButtons">
-        <a href="">About</a>
-        <a href="">Store</a>
-        <a href="" style="float: right;">Sign in</a>
-        <a href="" style="float: right;">Images </a>
-        <a href="" style="float: right;">Gmail </a> 
-            </div>
+        <div id="tNl" class="topBar">
+            <a href="#">About</a>
+            <a href="#">Store</a>
         </div>
-        
-    
-    <center>
-    
-        <div>
-       
-                <img alt="google" id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px;" width="272">
-                
-        
+        <div id="tNr" class="topBar">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <a href="#" id="signin" class="right">Sign in</a>
         </div>
-        <div class="topnav">
-            <input type="text" placeholder="">
-          </div>
-          <div>
-            <input value="Google Search" type="submit">  
-            <input value="I'm Feeling Lucky" type="submit">
-        
-          </div>
-    </center>
-       
-   
-       <footer></footer>
-    
+        <div id="centerPart">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" height="92">
+            <input name="query" id="query"><br>
+            <input type="button" name="search" class="button" value="Google Search">
+            <input type="button" name="lucky" class="button" value="I'm Feeling Lucky">
+        </div>
+        <div id="footer">
+            <div id="leftFoot" class="footer">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+        </div>
+        <div id="footer">
+            <div id="rightFooter" class="footer">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+        </div>
+
     </body>
 </html>
